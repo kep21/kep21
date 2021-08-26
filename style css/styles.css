@@ -1,5 +1,5 @@
-img { width: 50%; }
+img { width: 30%; }
 .center {display: block;
-  margin-left: auto;
+  margin-left: 60%;
   margin-right: auto;
 }
