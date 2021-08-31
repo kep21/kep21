@@ -1,6 +1,22 @@
-const  name = "Sergey Bubes"
+const myName = "Sergey Bubes"
 let age = 20;
 let boo = true;
 
 
-console.log(name, age, boo);
+console.log(myName, age, boo);
+window.alert('Hello')
+window.alert('How are you?')
+
+
+function plus() {
+	var num1, num2, result;
+	num1 = document.getElementById('n1').value;
+	num1 = parseInt(num1);
+
+	num2 = document.getElementById('n2').value;
+	num2 = parseInt(num2);
+
+	result = num1 + num2;
+
+	document.getElementById('out'). innerHTML = result;
+}
