@@ -30,9 +30,8 @@ function mathOperations(type) {
 
 }
  function whatcountry(type) {
-	 const firstCountry = parseInt(document.getElementById('Ukraine').value);
-	 const answerElement = document.getElementById('out');
- }
+	const answerElement = document.getElementById('out');
+
 
  switch (type) {
 	 case 'Ukraine' :
