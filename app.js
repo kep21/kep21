@@ -1,63 +1,31 @@
-const myName = "Sergey Bubes"
-let age = 20;
-let boo = true;
+function mathOperations(type) {
+	const firstNumber = parseInt(document.getElementById('n1').value);
+	const secondNumber = parseInt(document.getElementById('n2').value);
+	const answerElement = document.getElementById('out');
 
+	if (typeof firstNumber !== "number" || typeof secondNumber !== "number") {
+		alert(`Fields should be numbers!`);
+		return;
+	}
 
-console.log(myName, age, boo);
-window.alert('Hello')
-window.alert('How are you?')
+	switch (type) {
+		case 'plus':
+			answerElement.innerHTML = firstNumber + secondNumber;
+			break;
+		case 'minus':
+			answerElement.innerHTML = firstNumber - secondNumber;
+			break;
+		case 'multiply':
+			answerElement.innerHTML = firstNumber * secondNumber;
+			break;
+		case 'divideup':
+			if (secondNumber !== 0) {
+				answerElement.innerHTML = firstNumber / secondNumber;
+			}
+			answerElement.innerHTML = "Can't be divided by zero!";
+			break;
+		default:
+			alert(`You pass wrong type: ${type}!`);
+	}
 
-
-function plus() {
-	var num1, num2, result;
-	num1 = document.getElementById('n1').value;
-	num1 = parseInt(num1);
-
-	num2 = document.getElementById('n2').value;
-	num2 = parseInt(num2);
-
-	result = num1 + num2;
-
-	document.getElementById('out'). innerHTML = result;
-}
-
-function minus() {
-	var num1, num2, result;
-	num1 = document.getElementById('n1').value;
-	num1 = parseInt(num1);
-
-	num2 = document.getElementById('n2').value;
-	num2 = parseInt(num2);
-
-	result = num1 - num2;
-
-	document.getElementById('out'). innerHTML = result;
-}
-
-
-function multiply() {
-	var num1, num2, result;
-	num1 = document.getElementById('n1').value;
-	num1 = parseInt(num1);
-
-	num2 = document.getElementById('n2').value;
-	num2 = parseInt(num2);
-
-	result = num1 * num2;
-
-	document.getElementById('out'). innerHTML = result;
-}
-
-
-function divideup() {
-	var num1, num2, result;
-	num1 = document.getElementById('n1').value;
-	num1 = parseInt(num1);
-
-	num2 = document.getElementById('n2').value;
-	num2 = parseInt(num2);
-
-	result = num1 / num2;
-
-	document.getElementById('out'). innerHTML = result;
 }
