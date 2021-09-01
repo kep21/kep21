@@ -35,7 +35,7 @@ function mathOperations(type) {
 
  switch (type) {
 	 case 'Ukraine':
-	 answerElement.innerHTML=Привіт;
+	 answerElement.innerHTML=(Привіт);
 	 break;
  }
  }
