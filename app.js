@@ -24,18 +24,16 @@ function mathOperations(type) {
 			}
 			answerElement.innerHTML = "Can't be divided by zero!";
 			break;
-		default:
-			alert(`You pass wrong type: ${type}!`);
 	}
 
 }
  function whatcountry(type) {
-	const answerElement = document.getElementById('out');
-
+ const answerElement = document.getElementById('out');
 
  switch (type) {
-	 case 'Ukraine':
-	 answerElement.innerHTML=(Привіт);
-	 break;
- }
- }
+	case 'Ukraine':
+ answerElement.innerHTML = ('Привіт');
+	break;
+
+}
+}
