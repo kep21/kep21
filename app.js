@@ -29,13 +29,33 @@ function mathOperations(type) {
 	}
 
 }
- function whatcountry(type) {
+
+function whatcountry() {
+
 	const answerElement = document.getElementById('out');
+	const country = document.getElementById('country').value;
 
 
- switch (type) {
-	 case 'Ukraine':
-	 answerElement.innerHTML=(Привіт);
-	 break;
- }
- }
+	switch (country) {
+		case 'Ukraine':
+			answerElement.innerHTML = 'Привіт';
+			break;
+		case 'German':
+			answerElement.innerHTML = 'Hallo';
+			break;
+		case 'English':
+			answerElement.innerHTML = 'Hello';
+			break;
+		case 'French':
+			answerElement.innerHTML = 'Bonjour';
+			break;
+		case 'Turkey':
+			answerElement.innerHTML = 'Merhaba';
+			break;
+		case 'China':
+			answerElement.innerHTML = '你好';
+			break;
+		default:
+			alert('No matches found');
+	}
+}
