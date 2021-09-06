@@ -21,8 +21,9 @@ function mathOperations(type) {
 		case 'divideup':
 			if (secondNumber !== 0) {
 				answerElement.innerHTML = firstNumber / secondNumber;
+			} else {
+				answerElement.innerHTML = "Can't be divided by zero!";
 			}
-			answerElement.innerHTML = "Can't be divided by zero!";
 			break;
 	}
 }
