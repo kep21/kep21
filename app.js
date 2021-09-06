@@ -9,21 +9,21 @@ function mathOperations(type) {
 	}
 
 	switch (type) {
-		case 'plus':
-			answerElement.innerHTML = firstNumber + secondNumber;
-			break;
-		case 'minus':
-			answerElement.innerHTML = firstNumber - secondNumber;
-			break;
-		case 'multiply':
-			answerElement.innerHTML = firstNumber * secondNumber;
-			break;
-		case 'divideup':
-			if (secondNumber !== 0) {
-				answerElement.innerHTML = firstNumber / secondNumber;
+	case 'plus':
+	answerElement.innerHTML = firstNumber + secondNumber;
+	break;
+	case 'minus':
+	answerElement.innerHTML = firstNumber - secondNumber;
+	break;
+	case 'multiply':
+	answerElement.innerHTML = firstNumber * secondNumber;
+	break;
+	case 'divideup':
+	if (secondNumber !== 0) {
+	answerElement.innerHTML = firstNumber / secondNumber;
 			}
-			answerElement.innerHTML = "Can't be divided by zero!";
-			break;
+	answerElement.innerHTML = "Can't be divided by zero!";
+	break;
 	}
 
 }
@@ -34,6 +34,8 @@ function mathOperations(type) {
 	case 'Ukraine':
  answerElement.innerHTML = ('Привіт');
 	break;
-
+ case 'Poland':
+	answerElement.innerHTML = ('Hej');
+	break;
 }
 }
