@@ -39,3 +39,8 @@ function mathOperations(type) {
 	break;
 }
 }
+
+function increment () {
+	var i = getElementById('add')
+	i.value++;
+}
