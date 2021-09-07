@@ -83,3 +83,23 @@ function remaind() {
 		console.log('NO');
 	}
 }
+
+
+const a=10;
+const b=5;
+
+console.log(a-b);
+
+console.log(a+b);
+
+console.log(a/b);
+
+console.log(a*b);
+
+const firtsName='Sergey'
+const age='20'
+console.log(firtsName+ age)
+
+
+let trueorFalse=58<38;
+console.log(trueorFalse);
