@@ -85,21 +85,43 @@ function remaind() {
 }
 
 
-const a=10;
-const b=5;
-
-console.log(a-b);
-
-console.log(a+b);
-
-console.log(a/b);
-
-console.log(a*b);
-
-const firtsName='Sergey'
-const age='20'
-console.log(firtsName+ age)
 
 
-let trueorFalse=58<38;
-console.log(trueorFalse);
+
+let numbers = ['9', '92', '54', '6', '2', '5', '9', '43', '0', '12', '1', '14', '1995']
+
+console.log(numbers.indexOf('5'));
+
+
+
+const cities = [
+	{name: 'Moscow', population: 12506468},
+	{name: 'Saint Petersburg', population: 5351935},
+	{name: 'Novosibirsk', population: 1612833},
+	{name: 'Kaliningrad', population: 482443},
+	{name: 'Kaluga', population: 336726}
+];
+
+
+const array2 = ['6 ,'12', '16', '19', '21', '18', '7']
+const found = array2.find(element => element > 20);
+console.log(found);///found
+
+
+var millionPlusCities = cities.filter(e => e.population > 1000000);
+console.log(millionPlusCities);///filter
+
+
+
+var names = ['HTML', 'CSS', 'JavaScript'];
+
+var nameLengths = names.map(function(name) {
+  return name.length;
+});
+
+alert( nameLengths );///map
+
+
+const pets = ['cat', 'dog', 'bat'];
+
+console.log(pets.includes('cat'));///includes true параметр?
