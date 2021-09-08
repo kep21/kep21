@@ -94,22 +94,24 @@ console.log(numbers.indexOf('5'));
 
 
 
-const cities = [
-	{name: 'Moscow', population: 12506468},
-	{name: 'Saint Petersburg', population: 5351935},
-	{name: 'Novosibirsk', population: 1612833},
-	{name: 'Kaliningrad', population: 482443},
-	{name: 'Kaluga', population: 336726}
-];
 
 
-const array2 = ['6 ,'12', '16', '19', '21', '18', '7']
-const found = array2.find(element => element > 20);
-console.log(found);///found
+
+let grow = ['6', '2', '3', '19', '21', '18', '7']
+let result = grow.filter(function(elem) {
+	if (elem % 2 == 0) {
+		return true;
+	} else {
+		return false;
+	}
+});
+console.log(result)
+
+///filter
 
 
-var millionPlusCities = cities.filter(e => e.population > 1000000);
-console.log(millionPlusCities);///filter
+
+
 
 
 
@@ -120,6 +122,11 @@ var nameLengths = names.map(function(name) {
 });
 
 alert( nameLengths );///map
+
+
+
+
+
 
 
 const pets = ['cat', 'dog', 'bat'];
