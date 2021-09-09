@@ -1,5 +1,5 @@
 
-	const first = [1, 2, 3];
+	/*const first = [1, 2, 3];
 	const second = [4, 5, 6];
 
 	console.log(first.concat(second));/// 1 спосіб
@@ -9,3 +9,7 @@
 		Погуглиш яким чином обєднати можна два масиви в один. Можеш вивести багатьми варіантами, всіма якими знайдеш.
 	*/
 
+	const first = [1, 2, 3];
+	const second = [4, 5, 6];
+	const combined=[]. concat(first, second);
+	console.log(combined)
