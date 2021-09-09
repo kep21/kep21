@@ -1,18 +1,13 @@
+const friends = [
+	{ name: "Oleg", age: 20, city: "Lviv", gender: "Male" },
+	{ name: "Ira", age: 67, city: "Kyiv", gender: "Female" },
+	{ name: "Max", age: 32, city: "Yavoriv", gender: "Male" },
+	{ name: "Olya", age: 19, city: "Lviv", gender: "Female" },
+	{ name: "Ivan", age: 21, city: "Odessa", gender: "Male" },
+	{ name: "Roman", age: 24, city: "Dnipro", gender: "Male" }
+];
 
-	/*const first = [1, 2, 3];
-	const second = [4, 5, 6];
-
-	console.log(first.concat(second));/// 1 спосіб
-	/*
-		1 - Створити змінну result
-		2 - Обєднати два масиви, щоб в кінцевому результаті в консолі вивело [1, 2, 3, 4, 5, 6]
-		Погуглиш яким чином обєднати можна два масиви в один. Можеш вивести багатьми варіантами, всіма якими знайдеш.
-	*/
-
-	const first = [1, 2, 3];
-	const second = [4, 5, 6];
-	const result = {}
-	for(var i = 0; i < first.length; i++) {
-    result[first[i]] = second[i];
-}
-console.log(result)
+/*
+	1 - Вивести тільки тих друзів, які з міста Львів
+	2 - Вивести масив друзів, який був початково + додати поле - рік народження { ..., yearOfBirth: 2000 , ... }
+*/
