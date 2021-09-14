@@ -132,3 +132,5 @@ alert( nameLengths );///map
 const pets = ['cat', 'dog', 'bat'];
 
 console.log(pets.includes('cat'));///includes true параметр?
+
+
