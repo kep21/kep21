@@ -7,6 +7,7 @@ const friends = [
 	{ name: "Roman", age: 24, city: "Dnipro", gender: "Male", firstSalary: 2550, secondSalary: 8000 }
 ];
 
+<<<<<<< HEAD
 
 	/*function findline(German){
 	if (German.length>=6){
@@ -38,3 +39,15 @@ const friends = [
 	return "+-"
 }
 console.log(returnNumber(8))*/
+=======
+/*
+	Показати тільки тих друзів, які проживають у Львові та Києві. Додати нове пока - різниця між другою та першою зарплатою. Нехай поле називається difference.
+*/
+
+function newFriends(array) {
+	return array;
+}
+
+
+console.log(newFriends(friends));
+>>>>>>> fb65997127ca0e35388dda33e8bad7ec884dd23f
